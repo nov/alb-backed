@@ -14,7 +14,7 @@ set :user, 'ubuntu'
 
 set :rbenv_ruby, '2.5.0'
 
-set :linked_dirs, %w{log tmp/pids tmp/cache tmp/sockets vendor/bundle public/system}
+set :linked_dirs, %w{log db tmp/pids tmp/cache tmp/sockets vendor/bundle public/system}
 set :linked_files, %w{config/master.key}
 
 set :pty, true
