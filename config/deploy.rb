@@ -12,7 +12,7 @@ set :repo_url, "git@github.com:nov/alb-backed.git"
 set :deploy_to, "~/alb-backed"
 set :user, 'ubuntu'
 
-set :rbenv_ruby, '2.5.1'
+set :rbenv_ruby, '2.5.0'
 
 set :linked_dirs, %w{log tmp/pids tmp/cache tmp/sockets vendor/bundle public/system}
 
