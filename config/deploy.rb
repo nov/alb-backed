@@ -9,12 +9,13 @@ set :repo_url, "git@github.com:nov/alb-backed.git"
 
 # Default deploy_to directory is /var/www/my_app_name
 # set :deploy_to, "/var/www/my_app_name"
-set :deploy_to, "~/alb-backed"
+set :deploy_to, "/home/ubuntu/alb-backed"
 set :user, 'ubuntu'
 
 set :rbenv_ruby, '2.5.0'
 
 set :linked_dirs, %w{log tmp/pids tmp/cache tmp/sockets vendor/bundle public/system}
+set :linked_files, %w{config/master.key}
 
 set :pty, true
 
