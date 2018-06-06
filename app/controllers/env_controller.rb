@@ -1,5 +1,9 @@
 class EnvController < ApplicationController
   def show
-    render json: JSON.pretty_generate(ENV.as_json)
+    headers = request.headers.inject({}) do |hash, (key, value)|
+      hash[key] = value # if key ~= /HTTP_/
+      hash.merge!(key => value)
+    end
+    render json: JSON.pretty_generate(headers)
   end
 end
